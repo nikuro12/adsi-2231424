@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - elements</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><h2>perosnal data</h2></legend>
+            <!---->
+            <label for="fullname">fullname:</label>
+            <input type="text" name="fullname" id="fullname">
+                <br>
+                <!---->
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <!---->
+                <label for="photo">select photo..</label>
+                <input type="file" id="photo" name="photo">
+                <br><br>
+            <!---->
+           <label for="gender">gender</label>
+           <select name="gender" id="gender">
+             <option value="">select...</option>
+             <option value="f">female</option>
+             <option value="m">male</option>
+           </select>
+           <br>
+           <!---->
+            <label for="description">description</label>
+            <br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <!---->
+        </fieldset>
+        <fieldset>
+            <legend><h2>institutional data</h2></legend>
+            <!---->
+            <label>select program:</label>
+            <br>
+            <label>
+                <input type="radio" name="program"> TGO Diesel Engines
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="program"> TGO ADSI
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="program"> TGO graphic design
+            </label>
+            <br><br>
+            <!---->
+            <label>select favotite subjects:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="subject"> english
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="subjct"> ethics
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="subject"> physical Culture
+            </label>
+            <br><br>
+            <!---->
+            <input type="submit" value="send data">
+            <input type="reset" value="reset data">
+            <!---->
+
+        </fieldset>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
