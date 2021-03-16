@@ -1,0 +1,18 @@
+ <style>
+        body {
+            background-color: #3c6969;
+        }
+        article{
+            background-color: #039676;
+            color: #23312d;
+            font-family: tahoma;
+            margin: 100px auto;
+            width: 480px;
+        }
+        article h1 {
+           text-align: center;
+        }
+        article p {
+           text-align: justify;
+        }
+ </style>
