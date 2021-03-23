@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance selectors</title>
+    <style>
+        ul>li{
+            background-color: #ff4ef6;
+            margin: 5px;
+            padding: 5px;
+        }
+        ul li + li + li {
+            background-color: #15bb76;
+        }
+        li[class]{
+            background-color: #e76c6c;
+        }
+    </style>
+</head>
+<body>
+    <h1>advanced selectors</h1>
+    <h2>children selectors ul > li</h2>
+    <h2>adjacent selector ul li + li + li</h2>
+    <h2>attribute selector li[class]</h2>
+
+    <ol>
+        <li>
+            猫の品種
+            <ul>
+                <li class="highlight">シャム</li>
+                <li>雪の</li>
+                <li>トイガー</li>
+                <li>タキシード</li>
+            </ul>
+            <ul>
+                私の猫たち
+                <li class="highlight">ガモーラ</li>
+                <li>ハーレム</li>
+                <li>タイタス</li>
+                <li>ゴルディタ</li>
+            </ul>
+        </li>
+    </ol>
+    <h2></h2>
+</body>
+</html>
