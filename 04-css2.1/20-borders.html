@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> borders </title>
+    <style>
+        section.box{
+         background-color: rgb(207, 145, 183);
+         border-color: rgb(182, 114, 231);
+         border-style: solid;
+         line-height: 10em;
+         height: 200px;  
+         margin: 40px auto;  
+         text-align: center;
+         width: 400px;
+        }
+        section.box.box-width {
+         border-top-width: 10px;
+         border-right-width: 20px;
+         border-bottom-width: 10px;
+         border-left-width: 20px;
+        }
+        section.box.box-style {
+          border-top-style: solid;
+          border-right-style: dotted;
+          border-bottom-style: dashed;
+          border-left-style: double;
+         /*shorthand*/
+         border-style: solid, dotted, dashed, double;
+        }
+        section.box.box-color{
+            border-top-color: rgb(63, 4, 59);
+            border-right-color: rgb(243, 0, 81);
+            border-bottom-color: rgba(68, 0, 82, 0.301);
+            border-left-color: rgb(209, 0, 98);
+            border-color:rgb(63, 4, 59), rgb(243, 0, 81), rgba(68, 0, 82, 0.301),rgb(209, 0, 98);
+        }
+        section.box.box-all{
+          border-width: 6px;
+          border-style: dotted;
+          border-color:rgb(63, 4, 59);
+          /*shorthand*/
+          border: 6px dotted rgb(63, 4, 59)     
+        }
+
+    </style>
+</head>
+<body>
+    <section class="box box-width"> 
+        <h2>BORDER WIDTH </h2>
+    </section>
+    <section class="box box-style">
+         <h2> BORDER STYLE</h2>
+    </section>
+    <section class="box box-color">
+         <h2>BORDER COLOR </h2>
+    </section>
+    <section class="box box-all">
+         <h2>BORDER ALL </h2>
+    </section>
+</body>
+</html>
