@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear float</title>
+    <style>
+         main{
+            margin: 40px auto;
+            width: 400px;
+        }
+        section.bigbox {
+            border: 2px  solid #777;
+            padding: 0px 8px ;
+        }
+        section.bigbox img {
+            float: left;
+        }
+        section.bigbox p{
+            border: 1px solid#777;
+        }
+        section.bigbox p.clear {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>float position in the img</h2>
+        <section class="bigbox">
+            <img src="img/puck.png" alt="">
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sed cumque molestias, unde totam doloremque nam optio mollitia itaque quod asperiores saepe beatae consequuntur voluptatem quae aliquam. Labore et, voluptatibus ratione impedit vero veritatis optio aut fugiat delectus unde amet, dolorum quidem laudantium non libero reprehenderit at molestiae earum eaque!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste temporibus voluptates architecto magnam ipsa eligendi soluta sed, distinctio tenetur molestias, ad vel, similique hic delectus in cumque neque atque officiis possimus. Obcaecati, error. Beatae mollitia et est impedit doloremque sit odit eos, iure quisquam necessitatibus, obcaecati laboriosam consequatur? Aut, laudantium.
+            </p>
+        </section>
+        <h2>paragraph 2 with clear</h2>
+        <section class="bigbox">
+            <img src="img/puck.png" alt="">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolorum, iusto voluptas quas dolores incidunt consequatur vero eos velit, possimus aut magni quaerat tenetur sint et modi quasi mollitia assumenda, optio illum nulla suscipit alias. Aspernatur, vero pariatur. Veritatis unde, iste voluptates deserunt porro harum ipsam doloribus quos deleniti error?
+            </p>
+            <p class="clear">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat facilis veniam provident aliquid ut quis, quisquam natus! Delectus quos eos sapiente quo cum, qui corrupti ipsam autem nostrum voluptates assumenda? Quod natus accusantium sapiente culpa labore impedit ratione assumenda sunt, adipisci dolorum, asperiores nostrum vel nihil distinctio vero ipsum laborum!
+            </p>
+        </section>
+    </main>
+</body>
+</html>

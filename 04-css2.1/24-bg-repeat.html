@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background repeat</title>
+    <style>
+       section{
+           width: 400px;
+           height: 200px;
+           border: 2px solid #666;
+           margin: 25px auto;
+       }
+       section h2{
+           background-color: rbga(256, 256, 256, 0.6);
+           text-align: center;
+           margin: 0px;
+           padding: 5px;
+           
+       }
+       section.br1{background-repeat: repeat;}
+       section.br2{background-repeat: repeat-x;}
+       section.br3{background-repeat: repeat-y;}
+       section.br4{background-repeat: no-repeat;}
+
+
+    </style>
+</head>
+<body>
+   <section class="br1">
+       <h2>background-repeat: repeat</h2>
+   </section>
+   <section class="br2">
+       <h2>background-repeat: repeat-x</h2>
+   </section>
+   <section class="br3">
+       <h2>background-repeat: repeat-y</h2>
+   </section>
+   <section class="br4">
+       <h2>background-repeat: no-repeat</h2>
+   </section>
+</body>
+</html>
