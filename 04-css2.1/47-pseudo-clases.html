@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speudo codigo</title>
+    <style>
+        main{
+            margin: 40px auto;
+            position: relative;
+            width: 400px;
+        }
+        menu{
+            padding-left: 0px;
+        }
+        menu ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+        menu ul li {
+            display: inline-block;
+            vertical-align: top;
+        }
+        menu ul li a:link,
+        menu ul li a:visited {
+            display: block;
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        menu ul li a:hover{
+            background-color: #777;
+        }
+        menu ul li align-self:active{
+            background-color: #666;
+        }
+        menu ul li a:first-child{
+            background-color: #458945;
+        }
+        input {
+            border: 1px solid rgb(125, 243, 223);
+            padding: 10px 20px;
+            outline: none;
+        }
+        input:focus {
+            background-color: #ddd;
+            border: 1px solid #007a47;
+        }
+        p:first-line {
+            background-color: #d14ad1;
+        }
+        p:first-letter {
+            font-size: 4em;
+        }
+        div.box{
+            background-color: #567895;
+            height: 100px;
+            width: 100px;
+        }
+        div.box:after{
+            background-color: #12348988;
+            height: 100px;
+            width: 100px;
+            content: "☣️" ;
+            position: absolute;
+            left: 20px;  
+        }
+        div.box::before{
+            background-color: #7f93c488;
+            height: 100px;
+            width: 100px;
+            content: "danger" ;
+            position: absolute;
+            left: 40px;  
+        }
+    </style>
+</head>
+<body>
+     <main>
+         <h3>(:link, :visited, :active, :hover, :first-child)</h3>
+         <menu>
+             <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="">about</a></li>
+                 <li><a href="">services</a></li>
+                 <li><a href="">contact</a></li>
+             </ul>
+         </menu>
+         <h3>focus</h3>
+         <input type="text" placeholder="ingresa tu nombre aqui">
+         <h3>:firts-line , first-letter</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptates eaque commodi. Sequi, ipsum voluptatum voluptate quis dolor cupiditate cum aliquam! Sed molestias commodi est architecto veritatis laudantium omnis error!</p>
+         <h3>:after, :before</h3>
+           <div class="box"></div>
+     </main>
+</body>
+</html>
