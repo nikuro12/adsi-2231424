@@ -1,0 +1,153 @@
+body{
+    border:10px solid #fff;
+    background-color: rgb(84, 161, 81);
+    margin: 0px;
+}
+body div.spr1{
+    background: url(img/spriteweb.png) no-repeat;
+    background-position: -10px -398px;
+    height: 190px;
+    width: 191px;
+    margin: 0 auto;
+}
+section.main{
+   margin: 0 auto;
+   width: 955px;
+}
+section.main li{
+    height: 50px;
+    margin-left: 28px;
+    width: 155px;
+    display: inline-block;
+    text-align: center;
+    background: rgb(15, 71, 40);
+    line-height:  50px;
+}
+section.main li a:link, section.main li a:visited {
+    color: #fff;
+    border-bottom: #fff solid 8px;
+    text-decoration: none;
+    display: block;
+}
+section.main li a:hover {
+    background-color: rgba(6, 19, 1, 0.65);
+    border-bottom: orange 8px solid;
+}
+section.spr2 {
+    width: 905px;
+    height: 230px;
+    padding-top: 22px;
+    margin: 40px auto;
+    background-color: rgb(15, 71, 40);
+}
+section.spr2 div.refresco{
+    background: url(img/spriteweb.png) no-repeat;
+    background-position: -510px -6px;
+    height: 202px;
+    width: 254px;
+    margin-left: 32px;
+    display: inline-block;
+    border: 1px solid #fff;
+}
+section.spr2 div.refresco div.p1 a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bolder;
+    line-height: 75px;
+}
+section.spr2 div.refresco div.p1{
+    background-color: rgba(175, 173, 173, 0.281);
+    height: 75px;
+}
+section.spr2 div.refresco div.p1 a:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+    height: 75px;
+}
+section.spr3{
+    padding-top:15px;
+    background: rgba(6, 19, 1, 0.65);
+    margin: 50px auto;
+    height: 640px;
+    width: 917px;
+}
+section.spr3 div.koko{
+   background: #fff;
+   margin:0px auto;
+   margin-bottom: 15px;
+   width: 892px ;
+   height: 198px ;
+}
+section.spr3 div.koko div.gs1{
+   background: url(img/spriteweb.png) no-repeat;
+   background-position: -245px -491px;
+   height: 120px;
+   width: 191px;
+   margin:0px auto;
+}
+section.spr3 div.koko div.lorem {
+ text-align: justify;
+ height: 193px;
+ width: 450px;
+ padding-top: 12px ;
+ line-height: 1.7rem;
+}
+section.spr3 div.koko div.lorem a{
+    color: black;
+    text-decoration: none;
+}
+section.spr3 div.koko div.l1{
+    background: url(img/spriteweb.png) no-repeat;
+    background-position: -10px -200px;
+    margin:  0px auto;
+    height: 190px;
+    width: 191px;
+}
+section.spr3 div.a{
+    display: inline-block;
+    height: 190px;
+    vertical-align: middle;
+}
+section.spr3 div.koko:hover a.kuro{
+    color: rgb(71, 189, 124);
+
+}
+section.main2{
+    background-color: #fff; 
+    margin: 0px auto;
+    height:265px ;
+    width:905px  ;
+    padding-top: 5px;
+}
+section.main2 div.spr3{
+    background: url(img/spriteweb.png);
+    background-position: -514px -418px;
+    height: 177px;
+    width: 239px;
+    margin: 5px auto;
+}
+
+section.main2 li{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-left: 28px;
+    line-height: 50px;
+    text-align: center;
+}
+section.main2 li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 20px;
+}
+section.main2 li:hover{
+    border-bottom: rgb(7, 53, 7) 5px solid;
+}
+section.main2 div.main2 {
+    width: 680px;
+    margin: 0px auto;
+}
+

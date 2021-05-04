@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>new selectors</title>
+    <style>
+      ul{
+        margin: 0px auto;
+        width:200px ;
+      }
+      ul.ul1 li:first-of-type {
+        background-color: rgb(122, 251, 139);
+        padding: 4px;
+        width: 80px;
+      }
+      ul.ul1 li:last-of-type {
+        background-color: rgb(0, 179, 164);
+      }
+      ul.ul1 li:nth-child(3){
+        background-color: rgb(163, 0, 141);
+      }
+      /*---*/
+      table{
+        margin: 0px auto;
+        width: 200px;
+        border-collapse: collapse;
+      }
+      table td{
+        border: 1px solid #777;
+      }
+      table tr:nth-child(odd){
+        background-color: rgb(59, 69, 122);
+      }
+      table tr:nth-child(2n+2){
+        background-color: rgb(97, 124, 199);
+      }
+      ul.menu {
+        width: 240px;
+        list-style: none;
+        padding-left: 0px;
+      }
+      ul.menu li{
+        display: inline-block;
+      }
+      ul.menu li a:link,
+      ul.menu li a:visited{
+        background-color: rgb(110, 139, 156);
+        color: #fff;
+        padding: 4px 8px;
+        text-decoration: none;
+      }
+      ul.menu li.active a{
+        opacity: 0.6;
+      }
+      article{
+          display: none;
+          margin: 0px auto;
+          width: 260px;
+      }
+      article#home:target,
+      article#services:target,
+      article#contact:target {
+        display: block;
+      }
+
+      p.sl1::selection { background-color: #dd0;}
+      p.sl2::selection { background-color: #00d;}
+      p.sl3::selection { background-color: #d00;}
+      
+    </style>
+</head>
+<body>
+    <main>
+        <h2>new selectors</h2>
+        <h3>li:first-of-type/li:last-of-type/li:nth-child(3)</h3>
+         <ul class="ul1">
+             <li>python</li>
+             <li>ruby</li>
+             <li>php</li>
+             <li>java</li>
+             <li>c#</li>
+         </ul>
+          <h3>tr:nth-child(n+1) / tr:nth-child(n+2)</h3>
+    <table>
+        <tr>
+            <td>lorem 1</td>
+        </tr>
+        <tr>
+            <td>lorem 2</td>
+        </tr>
+        <tr>
+            <td>lorem 3</td>
+        </tr>
+        <tr>
+            <td>lorem 4</td>
+        </tr>
+        <tr>
+            <td>lorem 5</td>
+        </tr>
+        <tr>
+            <td>lorem 6</td>
+        </tr>
+    </table>
+    <h3>article#home:target</h3>
+    <ul class="menu">
+       <li class="link"><a href="#home">Home</a></li>
+       <li class="link"><a href="#services">Services</a></li>
+       <li class="link"><a href="#contact">Contact</a></li>
+    </ul>
+    <article id="home">
+    <h5>home</h5>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis voluptate assumenda iure accusamus quae repellendus non sint inventore dolores hic.
+    </p>
+    </article>
+    <article id="Services">
+    <h5>Services</h5>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel suscipit maiores, blanditiis commodi nulla quas accusamus a odio architecto sed.
+    </p>
+    </article>
+    <article id="Contact">
+    <h5>Contact</h5>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ducimus molestiae suscipit dolor. Odit asperiores quo commodi quas, dicta rerum!
+    </p>
+    </article>
+    <h3>:selection</h3>
+    <p class="sl1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, porro.</p>
+    <p class="sl2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sint?</p>
+    <p class="sl3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vel?</p>
+    </main>
+    <script>
+       let lis = document.getElementsByClassName('link');
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].onclick = function() {
+                removeClasses();
+                this.classList.add('active');
+            }
+        }
+        function removeClasses() {
+            for (let i = 0; i < lis.length; i++) {
+                lis[i].classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
