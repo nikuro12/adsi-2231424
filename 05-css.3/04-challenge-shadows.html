@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+    <style>
+        section.kuro{
+            height:384px ;
+            width:383px ;
+            margin:20px auto;
+        }
+        div.creeper{
+            width:20px ;
+            height:20px ;
+            box-shadow: 20px 0px 0px 0px rgb(0, 0, 0),
+                        40px 0px 0px 0px rgb(0, 0, 0),
+                        60px 0px 0px 0px rgb(0, 0, 0),
+                        80px 0px 0px 0px rgb(0, 0, 0),
+                        100px 0px 0px 0px rgb(0, 0, 0),
+                        120px 0px 0px 0px rgb(0, 0, 0),
+                        140px 0px 0px 0px rgb(0, 0, 0),
+                        160px 0px 0px 0px rgb(0, 0, 0),
+                        180px 0px 0px 0px rgb(0, 0, 0),
+                        200px 0px 0px 0px rgb(0, 0, 0),
+                        220px 0px 0px 0px rgb(0, 0, 0),
+                        240px 0px 0px 0px rgb(0, 0, 0),
+
+                        20px 20px 0px 0px rgb(0, 0, 0),
+                        40px 20px 0px 0px rgb(29, 173, 3),
+                        60px 20px 0px 0px rgb(111, 226, 90),
+                        80px 20px 0px 0px rgb(49, 190, 24),
+                        100px 20px 0px 0px  rgb(89, 194, 71),
+                        120px 20px 0px 0px rgb(132, 199, 120),
+                        140px 20px 0px 0px rgb(174, 233, 163),
+                        160px 20px 0px 0px rgb(244, 247, 243),
+                        180px 20px 0px 0px rgb(70, 190, 49),
+                        200px 20px 0px 0px rgb(13, 83, 1),
+                        220px 20px 0px 0px rgb(54, 170, 34),
+                        240px 20px 0px 0px rgb(0, 0, 0),
+
+                        20px 40px 0px 0px rgb(0, 0, 0),
+                        40px 40px 0px 0px rgb(29, 173, 3),
+                        60px 40px 0px 0px rgb(33, 136, 15),
+                        80px 40px 0px 0px rgb(49, 190, 24),
+                        100px 40px 0px 0px rgb(89, 194, 71),
+                        120px 40px 0px 0px rgb(45, 161, 24),
+                        140px 40px 0px 0px rgb(32, 124, 16),
+                        160px 40px 0px 0px rgb(40, 255, 2),
+                        180px 40px 0px 0px rgb(46, 185, 21),
+                        200px 40px 0px 0px rgb(115, 218, 97),
+                        220px 40px 0px 0px rgb(13, 83, 1),
+                        240px 40px 0px 0px rgb(0, 0, 0),
+
+                        20px 60px 0px 0px rgb(0, 0, 0),
+                        40px 60px 0px 0px rgb(40, 255, 2),
+                        60px 60px 0px 0px rgb(33, 136, 15),
+                        80px 60px 0px 0px  rgb(19, 19, 19),
+                        100px 60px 0px 0px rgb(19, 19, 19),
+                        120px 60px 0px 0px rgb(156, 238, 142),
+                        140px 60px 0px 0px rgb(45, 161, 24),
+                        160px 60px 0px 0px rgb(19, 19, 19),
+                        180px 60px 0px 0px rgb(19, 19, 19),
+                        200px 60px 0px 0px rgb(177, 235, 167),
+                        220px 60px 0px 0px rgb(32, 180, 6),
+                        240px 60px 0px 0px rgb(0, 0, 0),
+
+                        20px 80px 0px 0px rgb(0, 0, 0),
+                        40px 80px 0px 0px #37c51e,
+                        60px 80px 0px 0px #50b83e,
+                        80px 80px 0px 0px rgb(19, 19,19),
+                        100px 80px 0px 0px  rgb(0, 0, 0),
+                        120px 80px 0px 0px rgb(93, 226, 70),
+                        140px 80px 0px 0px rgb(35, 173, 11),
+                        160px 80px 0px 0px rgb(0, 0, 0),
+                        180px 80px 0px 0px rgb(19, 19, 19),
+                        200px 80px 0px 0px rgb(32, 180, 6),
+                        220px 80px 0px 0px rgb(34, 155, 13),
+                        240px 80px 0px 0px rgb(0, 0, 0),
+
+                        20px 100px 0px 0px rgb(0, 0, 0),
+                        40px 100px 0px 0px rgb(102, 150, 93),
+                        60px 100px 0px 0px rgb(40, 255, 2),
+                        80px 100px 0px 0px rgb(146, 231, 131),
+                        100px 100px 0px 0px rgb(58, 129, 45),
+                        120px 100px 0px 0px rgb(19, 19, 19),
+                        140px 100px 0px 0px rgb(19, 19, 19),
+                        160px 100px 0px 0px rgb(70, 170, 52),
+                        180px 100px 0px 0px rgb(205, 245, 198),
+                        200px 100px 0px 0px rgb(41, 87, 33),
+                        220px 100px 0px 0px rgb(26, 163, 2),
+                        240px 100px 0px 0px rgb(0, 0, 0),
+
+                        20px 120px 0px 0px rgb(0, 0, 0),
+                        40px 120px 0px 0px rgb(85, 182, 68),
+                        60px 120px 0px 0px rgb(32, 192, 4),
+                        80px 120px 0px 0px rgb(121, 216, 104),
+                        100px 120px 0px 0px rgb(19, 19, 19),
+                        120px 120px 0px 0px #000,
+                        140px 120px 0px 0px #000,
+                        160px 120px 0px 0px rgb(19, 19, 19),
+                        180px 120px 0px 0px rgb(40, 255, 2),
+                        200px 120px 0px 0px rgb(60, 150, 44),
+                        220px 120px 0px 0px rgb(36, 219, 3),
+                        240px 120px 0px 0px rgb(0, 0, 0),
+
+                        20px 140px 0px 0px rgb(0, 0, 0),
+                        40px 140px 0px 0px rgb(202, 212, 200),
+                        60px 140px 0px 0px rgb(83, 151, 71),
+                        80px 140px 0px 0px rgb(27, 143, 7),
+                        100px 140px 0px 0px rgb(0, 0, 0),
+                        120px 140px 0px 0px rgb(0, 0, 0),
+                        140px 140px 0px 0px rgb(0, 0, 0),
+                        160px 140px 0px 0px rgb(0, 0, 0),
+                        180px 140px 0px 0px rgb(129, 230, 112),
+                        200px 140px 0px 0px rgb(64, 141, 50),
+                        220px 140px 0px 0px rgb(14, 78, 3),
+                        240px 140px 0px 0px rgb(0, 0, 0),
+
+                        20px 160px 0px 0px rgb(0, 0, 0),
+                        40px 160px 0px 0px rgb(153, 255, 135),
+                        60px 160px 0px 0px rgb(40, 255, 2),
+                        80px 160px 0px 0px rgb(66, 190, 45),
+                        100px 160px 0px 0px rgb(19, 19, 19),
+                        120px 160px 0px 0px rgb(51, 175, 30),
+                        140px 160px 0px 0px rgb(49, 104, 40),
+                        160px 160px 0px 0px rgb(19, 19, 19),
+                        180px 160px 0px 0px rgb(60, 105, 52),
+                        200px 160px 0px 0px rgb(136, 172, 130),
+                        220px 160px 0px 0px rgb(131, 255, 109),
+                        240px 160px 0px 0px rgb(0, 0, 0),
+
+                        20px 180px 0px 0px rgb(0, 0, 0),
+                        40px 180px 0px 0px rgb(67, 124, 57),
+                        60px 180px 0px 0px rgb(20, 126, 2),
+                        80px 180px 0px 0px rgb(134, 243, 114),
+                        100px 180px 0px 0px rgb(33, 78, 25),
+                        120px 180px 0px 0px rgb(40, 255, 2),
+                        140px 180px 0px 0px rgb(11, 77, 0),
+                        160px 180px 0px 0px rgb(40, 255, 2),
+                        180px 180px 0px 0px rgb(108, 241, 85),
+                        200px 180px 0px 0px rgb(182, 243, 172),
+                        220px 180px 0px 0px rgb(40, 255, 2),
+                        240px 180px 0px 0px rgb(0, 0, 0),
+
+                        20px 200px 0px 0px rgb(0, 0, 0),
+                        40px 200px 0px 0px rgb(96, 146, 88),
+                        60px 200px 0px 0px rgb(24, 143, 3),
+                        80px 200px 0px 0px rgb(35, 218, 3),
+                        100px 200px 0px 0px rgb(91, 158, 79),
+                        120px 200px 0px 0px rgb(137, 180, 129),
+                        140px 200px 0px 0px rgb(25, 80, 15),
+                        160px 200px 0px 0px rgb(103, 228, 81),
+                        180px 200px 0px 0px rgb(97, 190, 81),
+                        200px 200px 0px 0px rgb(47, 173, 24),
+                        220px 200px 0px 0px rgb(255, 255, 255),
+                        240px 200px 0px 0px rgb(0, 0, 0),
+
+                        20px 220px 0px 0px rgb(0, 0, 0),
+                        40px 220px 0px 0px rgb(0, 0, 0),
+                        60px 220px 0px 0px rgb(0, 0, 0),
+                        80px 220px 0px 0px rgb(0, 0, 0),
+                        100px 220px 0px 0px rgb(0, 0, 0),
+                        120px 220px 0px 0px rgb(0, 0, 0),
+                        140px 220px 0px 0px rgb(0, 0, 0),
+                        160px 220px 0px 0px rgb(0, 0, 0),
+                        180px 220px 0px 0px rgb(0, 0, 0),
+                        200px 220px 0px 0px rgb(0, 0, 0),
+                        220px 220px 0px 0px rgb(0, 0, 0),
+                        240px 220px 0px 0px rgb(0, 0, 0)
+          ;              
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>challenge shadows</h1>
+        <section class="kuro">
+            <div class="creeper">
+                <div class="squarer"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
