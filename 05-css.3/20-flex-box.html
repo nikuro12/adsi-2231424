@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>flexbox</title>
+    <style>
+        *{
+            transition: all 0.5 ease-in-out;
+        }
+
+        div.demo{
+            min-height: 275px;
+            padding: .5rem;
+            box-sizing: border-box;
+            border: 2px solid rgba(202, 0, 142, 0.667);
+        }
+        div.demo div.parent{
+            position: relative;
+            grid-auto-columns: 1fr;
+            overflow: hidden;
+            border: 1px dashed #436b6b;
+        }
+        div.demo div.child{
+            position: relative;
+            min-width: 2.5rem;
+            min-height: 2.5rem;
+            padding: .5rem;
+            box-sizing: border-box;
+            background-color: rgb(155, 80, 126);
+            border: 1px solid rgb(133, 0, 77);
+        }
+        div.demo div.parent.d-f { display: flex; }
+        div.demo div.parent.i-f { display: inline-flex; }
+        div.demo div.parent div.child {
+            background-color: #a06997;
+            box-sizing: border-box;
+            border: 1px solid #8b115c;
+            min-width: 2.5rem;
+            min-height: 2.5rem;
+            padding: .5rem;
+            position: relative;
+            text-align: center;
+        }
+        .fd-r  { flex-direction: row; }
+        .fd-rr { flex-direction: row-reverse; }
+        .fd-c  { flex-direction: column; }
+        .fd-cr { flex-direction: column-reverse; }
+        button {
+            background: rgb(102, 0, 77);
+            color: floralwhite;
+            font-size: 4em;
+            border: none;
+            width: 150px;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+        button:hover {
+            background: #374635;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> <span><a href="index.html">&larr;</a></span> flex-box</h1>
+        <h2>flex containers</h2>
+        <h3>display</h3>
+        <buttom class="d-f">flex</buttom>
+        <buttom class="i-f">inline-flex</buttom>
+        <div class="demo">
+            some-text
+          <div class="parent d-f">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+          </div>
+        </div>
+        <h2>ordering & orientation</h2>
+        <h3>fle-direction</h3>
+        <buttom class="fd-r">row</buttom>
+        <buttom class="fd-rr">row-reverse</buttom>
+        <buttom class="fd-c">column</buttom>
+        <buttom class="fd-cr">column-reverse</buttom>
+        <div class="demo">
+          <div class="parent fd-r">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+          </div>
+        </div>
+    </main>
+    <script>
+        let bts    = document.getElementsByTagName('button'); 
+        let parent = document.querySelector('div.parent');
+
+        for (let i = 0; i < bts.length; i++) {
+            bts[i].onclick = function() {
+                //alert(this.getAttribute('id'));
+                let vid = this.getAttribute('id');
+                changeClasses(vid);
+            }
+        }
+        function changeClasses(vid) {
+            switch (vid) {
+                case 'd-f':
+                    parent.classList.remove('d-if');
+                    parent.classList.add('d-f');
+                    break;
+                case 'd-if':
+                    parent.classList.remove('d-f');
+                    parent.classList.add('d-if');
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

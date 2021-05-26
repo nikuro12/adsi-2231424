@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <link rel="stylesheet" href="master.css">
+    <style>
+       section.garden{
+           background: url(imgs/garden.jpg) no-repeat center;
+           background-size: cover;
+           height: 480px;
+           margin: 10px auto 0px auto; 
+           
+           position: relative;
+           width: 798px;
+       }
+       div.dove {
+           background: url(imgs/dove.png) no-repeat center;
+           background-size: cover;
+           height: 80px;
+           width: 120px;
+           position: absolute;
+           animation: animDove 4s ease-in infinite; 
+       }
+       @keyframes animDoves {
+          0% {
+              left: 0px;
+              top: 0px;
+              transform: rotate(0deg) scale(1);
+            }
+          50% {
+              left: 560px;
+              top: 360px;
+              transform: rotate(0deg) scale(0.7);
+            }
+          51% {
+              left: 560px;
+              top: 360px;
+              transform: rotate(0deg) scale(0.7);
+            }
+          81% {
+              left: 560px;
+              top: 360px;
+              transform: rotate(180deg) scale(4);
+            } 
+          100% {
+              left: -200px;
+              top: 300px;
+              transform: rotate(180deg) scale(10);
+            }
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> <span><a href="index.html">&larr;</a></span> animations</h1>
+           <section class="garden">
+               <div class="dove"></div>
+           </section> 
+    </main>   
+</body>
+</html> 

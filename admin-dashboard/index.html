@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>admin dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/ladings/line-awesome.min.css">
 </head>
 <body>
     <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h1><span class="lab la accusoft"></span>accusoft</h1>
+            <h2><i class="material-icons prefix">spa</i>accusoft</h2>
         </div>
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href=""><span class="las la-myespace"></span>
+                    <a href=""><i class="material-icons prefix">dashboard</i>
                         <span>dashboard</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-users"></span>
+                    <a href=""><i class="material-icons prefix">supervisor_account</i>
                         <span>costomers</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-clipboard-list"></span>
+                    <a href=""><i class="material-icons prefix">content_paste</i>
                         <span>projects</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-shipping-bag"></span>
+                    <a href=""><i class="material-icons prefix">shop</i>
                         <span>order</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-recipt"></span>
+                    <a href=""><i class="material-icons prefix">archive</i>
                         <span>inventory</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-user-circle"></span>
+                    <a href=""><i class="material-icons prefix">account_circle</i>
                         <span>accounts</span></a>
                 </li>
                  <li>
-                    <a href=""><span class="las la-clipboard-list"></span>
+                    <a href=""><i class="material-icons prefix">assignment</i>
                         <span>tasks</span></a>
                 </li>
             </ul>
@@ -49,15 +50,15 @@
     </div>
     <div class="main-content">
         <header>
-                <h2>
+                <h3>
                     <label for="nav-toggle">
-                       <span class="la la-bars"></span>
+                       <i class="material-icons prefix">menu</i>
                     </label>
                     dashboard
-                </h1>
+                </h3>
                 <div class="search-wrapper">
-                   <span class="las la-search"></span>
-                   <input type="search" placeholder="search hear" />
+                   <i class="material-icons prefix">search</i>
+                   <input type="search" placeholder="search"/>
                 </div>
                 <div class="user-wrapper">
                     <img src="imgk/5958797c-abd7-4c6b-8320-9c0d16c5bf16 (2).jpg" width="40px" height="40px" alt="">
@@ -76,7 +77,7 @@
                         <span>customers</span>
                     </div>
                     <div>
-                        <span class="las la-users"></span>
+                        <i class="medium material-icons prefix">supervisor_account</i>
                     </div>
                 </div>
     
@@ -86,7 +87,7 @@
                          <span>projects</span>
                       </div>
                       <div>
-                        <span class="las la-cli´pboard"></span>
+                        <i class="medium material-icons prefix">assignment</i>
                     </div>
                 </div>
 
@@ -96,7 +97,7 @@
                           <span>orders</span>
                      </div>
                       <div>
-                        <span class="las la-shipping-bag"></span>
+                        <i class="medium material-icons prefix">shop</i>
                     </div>
                 </div>
 
@@ -106,7 +107,7 @@
                         <span>income</span>
                     </div>
                     <div>
-                        <span class="las la-google-walle"></span>
+                        <i class="medium material-icons prefix">settings_input_antenna</i>
                     </div>
                 </div>
             </div>
@@ -114,9 +115,8 @@
                 <div class="proyects">
                     <div class="card">
                         <div class="card-header">
-                            <h3>recent projects</h3>
-                            <button>see all <span class="las la-arrow-right">
-                            </span></button>
+                            <h4>recent projects</h4>
+                            <button>see all <i class="material-icons prefix"</i>trending_flat</button>
                         </div>
 
                         <div class="card-body">
@@ -141,7 +141,7 @@
                                         <td>web developmen</td>
                                         <td>fronted</td>
                                         <td>
-                                            <span class="status orange"></span>
+                                            <span class="status red"></span>
                                             in progress
                                         </td>
                                     </tr>
@@ -165,7 +165,7 @@
                                         <td>web developmen</td>
                                         <td>fronted</td>
                                         <td>
-                                            <span class="status orange"></span>
+                                            <span class="status red"></span>
                                             in progress
                                         </td>
                                     </tr>
@@ -189,7 +189,7 @@
                                         <td>web developmen</td>
                                         <td>fronted</td>
                                         <td>
-                                            <span class="status orange"></span>
+                                            <span class="status red"></span>
                                             in progress
                                         </td>
                                     </tr>
@@ -211,8 +211,8 @@
                     <div class="card">
                         <div class="card-header">
                             <h3>new customers</h3>
-                            <button>see all <span class="las la-arrow-right">
-                            </span></button>
+                            <button>see all<i class="material-icons prefix">trending_flat</i>
+                            </button>
                         </div>
                         <div class="card-body">
                             <div class="customer">
@@ -226,9 +226,9 @@
                                </div>
                             </div>
                             <div class="contact">
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
 
                             <div class="customer">
@@ -239,10 +239,10 @@
                                     <small>CEO Excerpt</small>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
+                            <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
 
                             <div class="customer">
@@ -253,10 +253,24 @@
                                     <small>CEO Excerpt</small>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
+                           <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
+                           </div>
+
+                            <div class="customer">
+                                <img src="imgk/5958797c-abd7-4c6b-8320-9c0d16c5bf16 (2).jpg" width="40px"
+                                height="40px" alt="">
+                                <div>
+                                    <h4>kuro kanna</h4>
+                                    <small>CEO Excerpt</small>
+                                </div>
+                            </div>
+                           <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
 
                             <div class="customer">
@@ -267,10 +281,10 @@
                                     <small>CEO Excerpt</small>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
+                            <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
 
                             <div class="customer">
@@ -281,10 +295,10 @@
                                     <small>CEO Excerpt</small>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
+                            <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
 
                             <div class="customer">
@@ -295,26 +309,11 @@
                                     <small>CEO Excerpt</small>
                                 </div>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
-                            </div> 
-
-                            <div class="customer">
-                                <img src="imgk/5958797c-abd7-4c6b-8320-9c0d16c5bf16 (2).jpg" width="40px"
-                                height="40px" alt="">
-                                <div>
-                                    <h4>kuro kanna</h4>
-                                    <small>CEO Excerpt</small>
-                                </div>
+                           <div class="contact">
+                                <i class="small material-icons prefix">person_pin</i>
+                                <i class="small material-icons prefix">chat</i>
+                                <i class="small material-icons prefix">call</i>
                             </div>
-                            <div>
-                                <span class="las la-user-circle"></span>
-                                <span class="las la-comment"></span>
-                                <span class="las la-phone"></span>
-                            </div> 
-
                         </div>
 
                     </div>
@@ -323,4 +322,5 @@
         </main>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>

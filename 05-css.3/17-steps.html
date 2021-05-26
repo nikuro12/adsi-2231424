@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>Document</title>
+    <style>
+        section {
+            margin: 20px auto;
+             padding: 0px;
+        }
+        section.steps1 {
+            height: 509px;
+            width: 200px;
+            background: url(imgs/steps.png);
+            animation: animSteps1 0.8s steps(10) infinite;
+        }
+        @keyframes animSteps1 {
+            100% { background-position: -2000px; }
+        }
+        section.steps2 {
+            height: 240px;
+            width: 190px;
+            background: url(imgs/steps2.png);
+            animation: animSteps2 0.5s steps(10) infinite;
+        }
+        @keyframes animSteps2 {
+          100% { background-position: -1900px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+      <h1> <span><a href="index.html">&larr;</a></span> animations</h1>
+      <section class="steps1"></section>
+      <section class="steps2"></section>
+    </main>
+</body>
+</html>
