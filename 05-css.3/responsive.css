@@ -26,7 +26,7 @@ section.personajes{
     border:1px #12b solid;
     display:flex;
 }
-section.personajes a.dp {
+section.personajes div.dp {
     display: inline-block;
     text-decoration: none;
 }
@@ -153,10 +153,11 @@ div.miura{
        width: 450px;
        margin: 20px auto;
 
-       display: inline;
+       display:inline-block;
     }
+    
     div.dp{
-        display: inline-flex;
+        display: inline-block;
     } 
     section.k{
         width: 450px;
