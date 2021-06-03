@@ -1,0 +1,19 @@
+docytpe
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Challenge PUG
+		style.
+			h1 {
+				color: #ddd;
+				text-shadow: 0px 2px 4px #333;
+			}
+			div {
+				color: #777;
+				
+			}
+	body
+		h1 Challenge PUG
+		ul
+			each val, index in ['black', 'blue', 'red', 'green', 'purple']
+				div(style='background-color:'+val)= index + ': ' + val
