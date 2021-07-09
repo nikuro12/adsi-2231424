@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+           <h1> <span><a href="index.html">&larr;</a></span> variables JS</h1>
+        </header>
+        <section>
+         <h3>type string: <i id="type string"></i></h3>
+         <h3>type number: <i id="type string"></i></h3>
+         <h3>type boolean: <i id="type string"></i></h3>
+         <h3>type null/undefined: <i id="type string"></i></h3>
+         <h3>type array: <i id="type string"></i></h3>
+         <h3>type object: <i id="type string"></i></h3>
+        </section>
+    </main>
+    <script>
+     var tstring = document.getElementById('type-string');
+     var tnumber = document.getElementById('type-number');
+     var tboolean = document.getElementById('type-boolean');
+     var tnull = document.getElementById('type-null');
+     var tarray = document.getElementById('type-array');
+     var tobject = document.getElementById('type-objec');
+      //type string.
+     const string1 = "ADSI ";
+     const string2 = "2231424";
+     const stringr = string1 + ''+ string2;
+      tstring.innerHTML = string ;
+      //type number.
+      let num1 = 12;
+         let num2 = 4.569;
+         tnumber.innerText = num1 + num2;
+         // Type Boolean
+         var bool = (5==5);
+         tboolean.innerText = bool;
+         // Type Null & Undefined
+         var firstname = null;
+         var lastname  = undefined;
+         tnull.innerText = firstname + ' - ' + lastname;
+        // Type Array
+        var colors = new Array('red', 'green', 'blue', 'yellow', 'fuchsia', 'aqua');
+        tarray.innerText = colors[3];
+        // Type Object
+        var student = {
+            name: 'suleymani gamora',
+            age: 2,
+            element: 'air'
+        }
+        tobject.innerText = student.name;
+    </script>
+    
+</body>
+</html>
+
+    </script>
+</body>
+</html>

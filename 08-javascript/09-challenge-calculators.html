@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<title>Document</title>
+	<style>
+		div.calculator {
+			background: url(lcalculator/calculatorligth.png) no-repeat center;
+			height: 736px;
+			width: 414px;
+			position: relative;
+			margin: 0 auto 40px auto;			
+		}
+		div.calculator nav.modo{
+			left: 150px;
+			top: 18px;
+			position:absolute;
+			width: 120px;
+		}
+		div.calculator nav.modo a {
+			display: inline-block;
+			transition: transform 0.2s ease-in;
+                        height: 40px;
+			width: 60px;
+		}
+		div.calculator nav.modo a#dark:hover {
+			transform: scale(1.04) translate(2px);
+		}
+		div.calculator nav.modo a:hover{
+			transform: scale(1.04) translate(-2px);
+		}
+		div.calculator nav.modo a:last-child {
+			margin-left: -5px;
+		}
+		div.calculator nav.modo a#light {
+			background: url(Lcalculator/sol.png) no-repeat center;
+		}
+		div.calculator nav.modo a#dark{
+			background:url(Lcalculator/noche.png) no-repeat center;
+		}
+		div.calculator div.display {
+			top: 130px;
+			text-align: right;
+			right: 30px;
+			width: 300px;
+			position: absolute;
+			font-family: 'Roboto', sans-serif;
+
+		}
+		div.calculator div.display p#operator {
+			color: #3f5f36;
+			font-weight: 300;
+                        font-size: 18px;
+			margin: 0;
+		}
+		div.calculator div.display h4#answer {
+			color: #fff;
+			font-size: 64px;
+			font-weight: 400;
+			opacity: 0.8;
+			margin: 0;
+		}
+		div.calculator div.display #result{
+			background: url(calculator/=.png) no-repeat center;
+			width: 25px;
+			height: 40px;
+			margin-top: -55px;
+			margin-left: -30px;
+		}
+		div.calculator nav.buttons {
+			left: 20px;
+			position: absolute;
+			top: 250px;
+			width: 377px;	
+		}
+		div.calculator nav.buttons ul::selection {
+                        background-color: transparent; }
+                div.calculator nav.buttons ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		div.calculator nav.buttons ul li {
+			display: inline-block;
+			height: 75px;
+			width: 75px;
+			margin: 0px 15.89px 16.10px 0px;
+			transition: transform 0.6s ease-in;
+		}
+		div.calculatro nav.buttons ul li:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+			opacity: 1;
+		} 
+		div.calculator nav.buttons ul li:nth-child(4n){
+			margin-right: 0;
+		}
+		div.calculator nav.buttons ul li.btnC{background:url(Lcalculator/btnC.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnborar{background: url(Lcalculator/btn_-.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnpo{background: url(Lcalculator/potencia.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnd{background: url(Lcalculator/division.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn1{background: url(Lcalculator/btn1.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn2{background: url(Lcalculator/btn2.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn3{background: url(Lcalculator/btn3.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnx{background: url(Lcalculator/multiplicacion.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn4{background: url(Lcalculator/btn4.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn5{background: url(Lcalculator/btn5.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn6{background: url(Lcalculator/btn6.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnres{background: url(Lcalculator/btn\ rest.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn7{background: url(Lcalculator/btn7.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn8{background: url(Lcalculator/btn8.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn9{background: url(Lcalculator/btn9.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnm{background: url(Lcalculator/btn+.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnp{background: url(Lcalculator/porcentaje.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btn0{background: url(Lcalculator/btn0.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnt{background: url(Lcalculator/punto.png) no-repeat center;}
+		div.calculator nav.buttons ul li.btnr{background: url(Lcalculator/result.png) no-repeat center;}
+
+		div.calculator.dark {  background: url(calculator/wireframe-hifi.png) no-repeat center;}
+                div.calculator.dark nav.mode a#light {  background: url(calculator/lightmod.png) no-repeat center; }
+                div.calculator.dark nav.mode a#dark { background: url(calculator/darkmod.png) no-repeat center;  }
+		div.calculator.dark div.display p#operation {
+                  color: #d5eddf; }
+                div.calculator.dark div.display h4#answer { color: #000; opacity: 0.6; }
+        div.calculator.dark nav.buttons ul li.btnC {
+            background: url(calculator/btnC.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnborar {
+            background: url(calculator/btnborar.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnpo{
+            background: url(calculator/btn_.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnd {
+            background: url(calculator/btn.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn1 {
+            background: url(calculator/btn1.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn2 {
+            background: url(calculator/btn2.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn3 {
+            background: url(calculator/btn3.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnx {
+            background: url(calculator/multiplicacion.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn4 {
+            background: url(calculator/btn4.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn5 {
+            background: url(calculator/btn5.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn6 {
+            background: url(calculator/btn6.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnres {
+            background: url(calculator/bnt\ rest.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn7 {
+            background: url(calculator/btn7.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn8 {
+            background: url(calculator/btn8.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn9 {
+            background: url(calculator/btn9.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnm{
+            background: url(calculator/btn\ +.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnp{
+            background: url(calculator/btn%.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btn0 {
+            background: url(calculator/btn0.png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnt {
+            background: url(calculator/btn\ ..png) no-repeat center;
+        }
+        div.calculator.dark nav.buttons ul li.btnr {
+            background: url(calculator/btn=.png) no-repeat center;
+        }
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+                   <h1> <span><a href="index.html">&larr;</a></span> challenge-calculators </h1>
+		</header>
+		<section>
+			<div class="calculator">
+				<nav class="modo">
+					<a href="javascript:;" id="light"></a>
+					<a href="javascript:;" id="dark"></a>
+				</nav>
+				<div class="display">
+					<p id="operator"> </p>
+					<h4 id="answer"> </h4>
+					<div id="result"></div>
+				</div>
+				<nav class="buttons">
+					<ul>
+						<li class="btnC" onclick="display.borarTodo()"></li>
+						<li class="btnborar"></li>
+						<li class="btnpo"></li>
+						<li class="btnd"></li>
+						<li class="btn1"></li>
+						<li class="btn2"></li>
+						<li class="btn3"></li>
+						<li class="btnx"></li>
+						<li class="btn4"></li>
+						<li class="btn5"></li>
+						<li class="btn6"></li>
+						<li class="btnres"></li>
+						<li class="btn7"></li>
+						<li class="btn8"></li>
+						<li class="btn9"></li>
+						<li class="btnm"></li>
+						<li class="btnp"></li>
+						<li class="btn0"></li>
+						<li class="btnt"></li>
+						<li class="btnr"></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</main>
+	<script>
+        var nchars    = 0;
+        var operation = document.getElementById('operation');
+        var anwser    = document.getElementById('anwser');
+
+        const calculatorLigth  = document.querySelector('div.calculator');
+        const light = document.getElementById('light');
+	const dark = document.querySelector('#dark');
+	dark.addEventListener('click', e=>{
+		dark.classList.toggle('dark');
+	});
+        const btnC = document.getElementById('btnC');   
+	const btnborar = document.getElementById('btnborar');
+	const btnpo = document.getElementById('btnpo');
+	const btnd = document.getElementById('btnd');
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        const btn3 = document.getElementById('btn3');
+	const btn4 = document.getElementById('btn4');
+	const btn5 = document.getElementById('btn5');
+	const btn6 = document.getElementById('btn6');
+	const btnres = document.getElementById('btnres');
+	const btn7 = document.getElementById('btn7');
+	const btn8 = document.getElementById('btn8');
+	const btn9 = document.getElementById('btn9');
+	const btnm = document.getElementById('btnm');
+	const btnp = document.getElementById('btnp');
+	const btn0 = document.getElementById('btn0');
+	const btnt = document.getElementById('btnt');
+	const btnr = document.getElementById('btnr');
+        //segunda parte
+	function validateLength() {
+            if(nchars <= 28) {
+                nchars++;
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function addCharacter(c) {
+            if(validateLength()) {
+                operation.innerText += c;
+            }
+        }
+        function clearCharacters() {
+            operation.innerText = '';
+            anwser.innerText = '';
+            nchars = 0;
+        }
+        //no se qu es
+	light.onclick = function() {
+            this.classList.add('active');
+            dark.classList.remove('active');
+        }
+        dark.onclick = function() {
+            this.classList.add('active')
+            light.classList.add('active');
+        }
+
+        btn1.onclick = function() {
+            addCharacter(1);
+        }
+        btn2.onclick = function() {
+            addCharacter(2);
+        }
+        btn3.onclick = function() {
+            addCharacter(3);
+        }
+	btn4.onclick = function() {
+            addCharacter(4);
+        }
+	btn5.onclick = function() {
+            addCharacter(5);
+        }
+	btn6.onclick = function() {
+            addCharacter(6);
+        }
+	btn7.onclick = function() {
+            addCharacter(7);
+        }
+	btn8.onclick = function() {
+            addCharacter(8);
+        }
+	btn9.onclick = function() {
+            addCharacter(9);
+        }
+	btn0.onclick = function() {
+            addCharacter(0);
+        }
+	btnd.onclick = function() {
+            addCharacter(d);
+        }
+        btnC.onclick = function() {
+            clearCharacters();
+        }
+	class calculator {
+
+	       sumar ( num1, num2 ) {
+		       return num1 + num2;
+	       } 
+	        restar ( num1, num2 ) {
+		       return num1 - num2;
+	       }
+	        dividir ( num1, num2 ) {
+		       return num1 / num2;
+	       }
+	        multiplicar ( num1, num2 ) {
+		       return num1 * num2;
+	       }
+       }
+       const display = new display (displayOperator, displayAnswer);
+       buttons.forEach(btn => {
+	       btn.addEventListener('click', ()=>  display.agregarNumero(btn.innerHTML));
+	   
+       });
+
+       class display {
+	       constructor (displayOperator, displayAnswer){
+		       this.displayOperator = displayAnswer;
+		       this.displayOperator = displayOperator;
+		       this.calculator = new calculator();
+		       this.tipoOperacion = undefined
+		       this,displayAnswer = '';
+		       this.displayOperator = '';
+	       }
+	       borrar(){
+		       this.displayAnswer = this.displayAnswer.toString().slice(0, -1);
+		       this.imprimirValores();
+	       }
+	       borarTodo(){
+		       this.displayAnswer = '';
+		       this.displayOperator = '';
+		       this.tipoOperacion = undefined;
+		       this.imprimirValores();
+	       }
+	       agregarNumero(numero){
+		       if(numero === '.' && this.displayAnswer.includes('.')) return
+		       this.displayAnswer = this.displayAnswer.toString() + numero.toString();
+		       this.imprimirValores();
+	       }
+	       imprimirValores (){
+		       this.displayAnswer.textContent = this.displayAnswer;
+		       this.displayOperator.textContent = this.displayOperator;
+	       }
+	       calcular(){
+		       const displayOperator = parseFloat(this.displayOperator);
+		       const displayAnswer = parseFloat(this.displayAnswer);
+
+		       if (isNaN(displayAnswer) || isNaN (displayOperator) ) return
+		       this.displayAnswer = this.calculator[this.tipoOperacion](displayOperator, displayAnswer);
+	       }
+	       
+       }
+	</script>
+</body>
+</html>
