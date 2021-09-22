@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<title>challenge balota</title>
+	<style>
+	
+	div.fondo{
+		background: url(axies/Group\ 2.png)no-repeat center;
+		height: 1144px;
+                width: 1886px;
+                left: 678px;
+                top: 115px;
+                border-radius: 0px;
+	}
+	div.fondo div.ballot{
+		background: url(axies/Group\ 1.png)no-repeat center;
+                position: relative;
+		text-align: center;
+                width: 940px;
+                height: 230px;
+                Top :8px;
+		Left:475px;
+	}
+	div.fondo figure.slp1{
+		background: url(axies/slpuwu\ 3.png)no-repeat center;
+		height: 210px;
+		position: relative;
+                width: 210px;
+                left: 416px;
+                top: 271px;
+		text-align: center;
+		line-height: 15rem;
+		font-size: 5rem;
+		color: white;
+               
+
+	}
+	.animate__wobble{
+		animation: wobble;
+		animation-duration: 5s;
+
+	}
+
+	
+	div.fondo figure.slp2{
+                background: url(axies/slpuwu\ 3.png)no-repeat center;
+		position: relative;
+                width: 210px;
+                height: 210px;
+                left: 808px;
+		text-align: center;
+                top: 110px;
+		line-height: 15rem;
+		font-size: 5rem;
+		color: white;
+	}
+	div.fondo figure.slp3{
+                background: url(axies/slpuwu\ 3.png)no-repeat center;
+		height: 210px;
+		position: relative;
+                width: 210px;
+                left: 619px;
+                top: -308px;
+		text-align: center;
+		line-height: 15rem;
+		font-size: 5rem;
+		color: white;
+		
+               
+	}
+	div.fondo figure.slp4{
+                background: url(axies/slpuwu\ 3.png)no-repeat center;
+		position: relative;
+		text-align: center;
+                width: 210px;
+                height: 210px;
+                left: 999px;
+                top: -598px;
+		line-height: 15rem;
+		font-size: 5rem;
+		color: white;
+	}
+	div.fondo figure.slp5{
+                background: url(axies/slpuwu\ 3.png)no-repeat center;
+		position: relative;
+		text-align: center;
+                width: 210px;
+                height: 210px;
+                left: 1205px;
+                top: -889px;
+		color: white;
+		line-height: 15rem;
+		font-size: 5rem;
+	}
+
+	div.fondo figure.slp6{
+		background: url(axies/Imagen1\ 1.png)no-repeat center;
+		Width:316px;
+		Height :432px;
+		position: relative;
+		text-align: center;
+                left: 754px;
+                top: -1531px;
+		color: white;
+		line-height: 17rem;
+		font-size: 5rem;
+	}
+	div.fondo div.tesoro{
+		background: url(axies/Imagen6\ 1.png)no-repeat center;
+		position: relative;
+                width: 269px;
+                height: 260px;
+                left: 815px;
+                top: -1790px;  
+	}
+	div.fondo button.start{
+		background: url(axies/start\ 1.png)no-repeat center;
+		position: relative;
+                width: 588px;
+                height: 155px;
+                left: 664px;
+                top: -1601px;
+		border: none;
+		
+	}
+	 div.fondo button.start:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+	</style>
+</head>
+<body>
+	<main>
+		<section>
+			 <div class="fondo">
+				 <div class=" ballot"></div>
+
+				 <figure class="slp1 slp" ></figure>
+				 <figure class="slp2 slp" ></figure>
+				 <figure class="slp3 slp" ></figure>
+				 <figure class="slp4 slp" ></figure>
+				 <figure class="slp5 slp" ></figure>
+				 <figure class="slp6 slp" ></figure>
+				 <div class="tesoro"></div>
+
+				 <button class="start"></button>
+			 </div>
+		</section>
+	</main>
+	<script>
+
+		const bstart = document.querySelector('button.start');
+		const slp = document.querySelectorAll('figure.slp');
+		var num ;
+
+		bstart.onclick = function() {
+
+			for (let i=0; i<slp.length; i++) {
+				slp[i].classList.remove('animate__wobble');              
+			}
+			setTimeout(function() {
+			for (let i=0; i<slp.length; i++) {
+			slp[i].classList.add('animate__wobble'); }
+		}, 500);
+			var array= new Array;
+                   for(let i=0; i<5; i++){
+			   var cont=0;
+			   num = Math.ceil(Math.random()*43);                        
+		      for (let k = 0; k< array.length; k++) {
+			
+			 if(num ==array[k]){
+				 cont++;
+			 }          
+		      }
+		      if(cont > 0 ){
+			      i--;
+		      }   
+		      else{
+			      array[i]=num;
+			      slp[i].innerHTML = num ;
+		      }
+		   }
+		   num = Math.ceil(Math.random()*16);
+		   slp[5].innerHTML=num;
+	
+		}
+
+	</script>
+</body>
+</html>
